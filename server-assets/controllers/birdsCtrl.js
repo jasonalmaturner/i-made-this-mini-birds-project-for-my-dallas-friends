@@ -1,7 +1,4 @@
 var bird = require('../models/bird');
-  // mongoose = require('mongoose');
-
-// var Bird = mongoose.model('Bird', birdSchema);
 
 module.exports = {
   addBird: function(req, res) {

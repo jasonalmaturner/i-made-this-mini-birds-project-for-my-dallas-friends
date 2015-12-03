@@ -9,7 +9,10 @@ var express = require('express'),
   birdCtrl = require('./server-assets/controllers/birdsCtrl'),
   sightingsCtrl = require('./server-assets/controllers/sightingsCtrl');
 
+// This line replaces mongoose's promise library with the q promise library.
+// I prefer the q promise library
 mongoose.Promise = require('q').Promise;
+
 app.use(bodyParser.json(), cors(), express.static(__dirname + '/public'));
 
 // User endpoints
